@@ -117,7 +117,7 @@ input:-webkit-autofill:active {
 }
 
 a,
-button, .button {
+button, .theme-btn {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -170,27 +170,27 @@ p {
     background: #FA4753;
 }
 
-.button {
+.theme-btn {
     padding: 15px 43px;
     background: #FA4753;
     display: inline-block;
+    box-shadow: 0px 0px 0 #223645;
 }
 
-.button:hover {
-    /* background: #0058bd; */
-}
-
-.button a {
+.theme-btn a {
     color: #ffffff;
     font-weight: 600;
     text-transform: capitalize;
 }
+.theme-btn:hover{
+    box-shadow: 7px 8px 0 #223645;
 
-.button a:hover {
+}
+.theme-btn a:hover {
     color: #fff;
 }
 
-.button svg {
+.theme-btn svg {
     margin-left: 4px;
     font-size: 14px;
 }
@@ -537,20 +537,7 @@ p {
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
-    position: relative;
-    z-index: 99999999;
 }
-.hero-cta .theme-btn::before{
-    position: absolute;
-    content: '';
-    left: 4%;
-    top: 10%;
-    background: #223645;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
 .hero-cta .link {
     margin: 0px 0 0 40px;
     font-family: 'Poppins';
@@ -1938,7 +1925,7 @@ button.slick-arrow svg {
     margin-top: 21px;
     margin-bottom: 0;
 }
-.comment-form .button{
+.comment-form .theme-btn{
     color: #fff;
     padding: 15px 33px;
     margin-top: 35px;
