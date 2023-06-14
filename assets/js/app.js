@@ -1,6 +1,17 @@
 (function ($) {
     "use strict";
     $(document).ready(function () {
+
+         /*---------------------------------------------------
+            Tooltip
+        ----------------------------------------------------*/
+
+        tippy('#tippy_bar', {
+            content: "Marketing & Consultation",
+            placement: 'top-end',
+            animation: 'shift-toward-extreme',
+        });
+
         /*---------------------------------------------------
             Isotop filter course 
         ----------------------------------------------------*/
