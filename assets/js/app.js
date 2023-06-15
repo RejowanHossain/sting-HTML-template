@@ -17,14 +17,18 @@
             animation: 'shift-toward-extreme',
         });
 
-        /*---------------------------------------------------
-            Isotop filter course 
-        ----------------------------------------------------*/
+
 
         $("#cta-input").click(function(){
             $("#show-hide-submenu").toggleClass('show-input');
         });
 
+
+        /*---------------------------------------------------
+            Isotop filter course 
+        ----------------------------------------------------*/
+
+    
         // init Isotope
         var $grid = $('.port-filter').isotope({
             // options
@@ -139,10 +143,10 @@
             ]
         });
 
-         /*---------------------------------------------------
+        /*---------------------------------------------------
             team slider
         ----------------------------------------------------*/
-        $('.home-2-team-slider').slick({
+        $('.home-1-team-slider').slick({
             dots: false,
             infinite: true,
             arrows: false,

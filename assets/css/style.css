@@ -1105,42 +1105,43 @@ button.slick-arrow svg {
     team-area
 ---------------------------------------------------------------------------------------*/
 .team{
-    padding: 67px 0 67px;
+    padding: 68px 0 68px;
 }
-.team .section-title{
-    margin-bottom: 65px;
-}
-.team-images .overlay{
-    height: 100%;
-    width: 100%;
-}
-.single-team .hovered-state{
-    width: 270px;
+.team-hover{
+    margin-top: 24px;
     text-align: center;
 }
-.single-team .hovered-state p{
-    font-size: 10px;
-}
-.single-team .hovered-state h5 {
+.team-hover p{
+    font-family: 'Poppins';
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 160%;
+    color: #223645;
+    margin-bottom: 5px;
 }
-.single-team .hovered-state .social{
+.team-hover h4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #223645;
+}
+.social-icons{
+    margin-top: 18px;
+}
+
+.social-icons ul{
     display: flex;
     justify-content: center;
 }
-.single-team .hovered-state .social a {
-    font-size: 15px;
-    color: #fff;
+.social-icons ul li{
     margin-right: 20px;
 }
-.team .team-slider .slick-next.pull-right.slick-arrow {
-    right: 46%;
-    top: 112%;
+.social-icons ul li:hover a{
+    color: #223645;
 }
-.team .team-slider .slick-prev.pull-left.slick-arrow {
-    right: 50%;
-    top: 112%;
+.social-icons ul li:last-child{
+    margin-right: 0;
 }
 
 /*-------------------------------------------------------------------------------------
