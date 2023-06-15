@@ -912,7 +912,7 @@ button.slick-arrow svg {
     portfolio-area
 ---------------------------------------------------------------------------------------*/
 .portfolio{
-    padding: 67px 0 135px;
+    padding: 67px 0;
 }
 .portfolio .section-title{
     margin-bottom: 65px;
@@ -1006,34 +1006,99 @@ button.slick-arrow svg {
     cursor: pointer;
 }
 /*-------------------------------------------------------------------------------------
-    appointment-area
+        Video-area
 ---------------------------------------------------------------------------------------*/
-.appointment{
-    background: url('../images/appointment-bg.png') top left;
+.video{
+    background: url('../images/video.png') top left;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 76px 0;
-    padding-bottom: 67px;
+    padding: 174px 0;
+    position: relative;
+    margin: 68px 0;
+
 }
-.appointment .sub-heading p,
-.appointment h2{
+.video::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #031031;
+    opacity: .6;
+    top: 0;
+    left: 0;
+}
+.video .pulse{
+    background: #FA4753;
+}
+.video .pulse svg{
     color: #fff;
 }
-.appointment-cta {
-    background: #fff;
+.video .section-title h2{
+    color: #fff;
 }
-.appointment-cta:hover {
-    background: #fff;
-}
-.appointment-cta a{
-    color: #FA4753;
-}
-.appointment-cta a:hover {
-    color: #FA4753;
-}
-.d-end{
+.pulse {
+    background-color: #fff;
+    width: 75px;
+    height: 75px;
+    line-height: 55px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-animation: video-pulse-presentation 2s linear infinite;
+    animation: video-pulse-presentation 2s linear infinite;
+    transition: .3s linear all;
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
+}
+
+.pulse svg{
+    color: #0D7DFC;
+}
+
+@-webkit-keyframes video-pulse-presentation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 70%), 0 0 0 0 rgb(19 173 229 / 70%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 70%), 0 0 0 0 rgb(19 173 229 / 70%);
+    }
+
+    40% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 0 rgb(19 173 229 / 70%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 0 rgb(19 173 229 / 70%);
+    }
+
+    80% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+    }
+}
+
+@keyframes video-pulse-presentation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 70%), 0 0 0 0 rgb(19 173 229 / 70%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 70%), 0 0 0 0 rgb(19 173 229 / 70%);
+    }
+
+    40% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 0 rgb(19 173 229 / 70%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 0 rgb(19 173 229 / 70%);
+    }
+
+    80% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+        box-shadow: 0 0 0 0 rgb(19 173 229 / 0%), 0 0 0 30px rgb(19 173 229 / 0%);
+    }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -1133,39 +1198,6 @@ button.slick-arrow svg {
     z-index: 99999;
 }
 
-
-/*-------------------------------------------------------------------------------------
-        Video-area
----------------------------------------------------------------------------------------*/
-.video{
-    background: url('../images/video.png') top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 191px;
-    position: relative;
-    margin-top: -21%;
-}
-.video::before{
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    background: #031031;
-    opacity: .6;
-    top: 0;
-    left: 0;
-}
-.video .pulse{
-    background: #FA4753;
-    margin-right: 100px;
-}
-.video .pulse svg{
-    color: #fff;
-}
-.video .padding-right{
-    display: flex;
-    justify-content: end;
-}
 
 /*-------------------------------------------------------------------------------------
         FAQ-area
