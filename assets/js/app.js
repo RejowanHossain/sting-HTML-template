@@ -2,6 +2,11 @@
     "use strict";
     $(document).ready(function () {
 
+        $('.tab-btn-wrapper button').click(function(){
+            $('button').removeClass("active-item");
+            $(this).addClass("active-item");
+        });
+
          /*---------------------------------------------------
             Tooltip
         ----------------------------------------------------*/
@@ -24,6 +29,7 @@
         var $grid = $('.port-filter').isotope({
             // options
         });
+        
         // filter items on button click
         $('.tab-btn-wrapper').on( 'click', 'button', function() {
             var filterValue = $(this).attr('data-filter');
