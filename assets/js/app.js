@@ -209,9 +209,9 @@
             testimonial carousel
         ----------------------------------------------------*/
         $('.testimonial-slider').slick({
-            dots: false,
+            dots: true,
             infinite: true,
-            arrows: true,
+            arrows: false,
             prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
             autoplay: true,
