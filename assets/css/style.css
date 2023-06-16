@@ -1309,66 +1309,23 @@ ul.slick-dots li.slick-active > button{
 .theme-cta:hover .form-touch-cta{
     box-shadow: 7px 8px 0 #fff;
 }
-/*-------------------------------------------------------------------------------------
-        FAQ-area
----------------------------------------------------------------------------------------*/
-.faq{
-    padding: 135px 0 67px;
-}
-.faq-btn{
-    color: #fff;
-    padding: 15px 33px;
-    margin-top: 20px;
-}
-.faq-para{
-    margin-top: 10px;
-}
-.btn.btn-link.btn-block.text-left {
-    color: #FA4753;
-    text-decoration: none;
-}
-.btn.btn-link.btn-block.text-left:hover,
-.btn.btn-link.btn-block.text-left:active {
-    text-decoration: none;
-    color: #031031;
-}
-.card{
-    border-right: 0;
-    border-left: 0;
-}
-.card:first-child {
-    border-top: 0;
-}
-.card:last-child {
-    border-bottom: 0;
-}
-.btn.btn-link.btn-block.text-left.collapsed {
-    color: #031031;
-}
-.card-header{
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.card-body{
-    color: #647589;
-    font-weight: 400;
-}
 
 /*-------------------------------------------------------------------------------------
         blog-area
 ---------------------------------------------------------------------------------------*/
 .blog{
-    padding: 67px 0 67px;
+    padding: 67px 0;
+    margin-bottom: 384px;
 }
-.blog .section-title {
-    margin-bottom: 65px;
-}
+
 .blog-content{
     background: #fff;
     filter: drop-shadow(0px 7px 55px rgba(52, 62, 97, 0.06));
-    padding: 40px 25px;
+    padding: 42px 19px;
+    position: absolute;
+    bottom: -110%;
+    max-width: 328px;
+    left: 9%;
 }
 .blog-wrapper .blog-img{
     position: relative;
@@ -1380,21 +1337,44 @@ ul.slick-dots li.slick-active > button{
     padding: 14px 22px;
     position: absolute;
     right: 9%;
-    bottom: 36%;
+    bottom: 14%;
     z-index: 99999;
 }
-.blog-wrapper .date p{
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
+
+.blog-wrapper .date span{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
 .blog-content h5{
-    color: #031031;
-    line-height: 33px;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 600;
+    font-size: 20px;
+    line-height: 144%;
     text-transform: capitalize;
-    font-size: 22px;
-    margin-bottom: 13px;
+    color: #223645;
+    margin-bottom: 16px;
+}
+.blog-content span{
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    color: #FA4753;
+    margin-bottom: 16px;
+}
+.blog-content p{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #3C2C40;
+    margin-bottom: 16px;
 }
 .blog-content a {
     letter-spacing: 1px;
@@ -1408,13 +1388,20 @@ ul.slick-dots li.slick-active > button{
 ---------------------------------------------------------------------------------------*/
 
 .footer {
-    background: #FBFCFD;
+    background: #223645;
     padding: 87px 0 25px 0;
     margin-top: 67px;
 }
+.footer .section-title h2{
+    color: #fff;
+}
 .footer .newsletter{
-    border-bottom: 1px solid rgba(100, 117, 137, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 65px;
+}
+.footer .d-end{
+    display: flex;
+    justify-content: end;
 }
 .footer .newsletter h5{
     font-size: 30px;
@@ -1425,14 +1412,17 @@ ul.slick-dots li.slick-active > button{
     border: none;
     background: #f0f0f0;
     padding: 14px 23px;
-    width: 430px;
+    width: 569px;
     position: relative;
 }
 .footer .newsletter .newsletter-btn{
     color: #fff;
+    position: absolute;
+    right: 2.5%;
+    bottom: 0;
 }
 .widgets{
-    border-bottom: 1px solid rgba(100, 117, 137, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         padding-bottom: 65px;
 }
 .d-center{
@@ -1448,17 +1438,20 @@ ul.slick-dots li.slick-active > button{
 .widget p{
     font-size: 15px;
     margin-top: 10px;
+    color: #fff;
 }
 .widget h5{
     font-size: 18px;
     font-weight: 600;
-    color: #031031;
+    color: #fff;
     margin-bottom: 16px;
 }
 .widget ul li a{
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
+    font-family: 'Rubik';
     font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
 }
 .widget ul li{
     margin-bottom: 15px;
@@ -1468,7 +1461,7 @@ ul.slick-dots li.slick-active > button{
 }
 .widget ul li a:hover{
     cursor: pointer;
-    color: #031031;
+    color: #FA4753;
 }
 .footer-menu p{
     font-size: 14px;
@@ -1478,7 +1471,10 @@ ul.slick-dots li.slick-active > button{
     font-weight: 700;
 }
 .footer-copyright{
-    padding-bottom: 25px;
+   margin-top: 25px;
+}
+.footer-copyright p{
+    color: #fff;
 }
 
 /*-------------------------------------------------------------------------------------
