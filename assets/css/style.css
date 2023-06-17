@@ -2181,135 +2181,140 @@ ul.slick-dots li.slick-active > button{
 /*-------------------------------------------------------------------------------------
        Home 2 Header
 ---------------------------------------------------------------------------------------*/
-.skew-div-right{
-    position: relative;
-}
-.skew-div-right::after{
-    content: '';
-    position: absolute;
-    background: #fff;
-    height: 177%;
-    width: 164px;
-    right: -74px;
-    bottom: -38%;
-    z-index: 10;
-    transform-origin: bottom left;
-    -ms-transform: skew(-30deg, 0deg);
-    -webkit-transform: skew(-30deg, 0deg);
-    transform: skew(-35deg, 0deg);
-}
-.skew-div-right .site-logo a img{
-    position: relative;
-    z-index: 11;
-}
-.skew-div{
-    background: #061028;
-    position: relative;
-}
-.skew-div::after{
-    content: '';
-    position: absolute;
-    background: #061028;
-    height: 100%;
-    width: 74px;
-    right: -74px;
-}
-.skew-div ul li a{
-    color: #fff;
-}
-
-.skew-div ul li ul.submenu li a{
-    color: #061028;
-}
 
 .main-menu ul li.user-cta.home-2 ul.submenus{
     left: -1500%;
 }
 
+
+/*-------------------------------------------------------------------------------------
+       Home 2 Topbar
+---------------------------------------------------------------------------------------*/
+
+.topbar{
+    background: #222628;
+
+}
+.topbar ul{
+    display: flex;
+}
+.topbar ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+}
+.topbar ul li:last-child{
+    margin-right: 0;
+}
+.topbar ul li iconify-icon{
+    color: #fff;
+    margin-right: 11px;
+}
+.topbar ul li a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.topbar-cta{
+    background: #FA4753;
+    padding: 17px 39px;
+}
 /*-------------------------------------------------------------------------------------
        Home 2 Hero
 ---------------------------------------------------------------------------------------*/
-.home-2 .hero-bg{
-    background: #061028;
+.home-2-hero{
+    background: url('../images/home-2-hero.png') no-repeat center center;
+    background-size: cover;
+    padding: 139px 0;
     position: relative;
-}
-.home-2 .hero-bg .home-2-shape{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-.home-2 .hero-bg .hero-text{
-    padding: 210px 103px 209px 81px;
-    position: relative;
-    z-index: 10;
-}
-.home-2 .hero-bg .hero-text span{
-    color: #fff;
-    font-weight: 500;
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 55px;
-}
-.home-2 .hero-bg .hero-text span::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 8px;
-    background: #fff;
-    height: 2px;
-    width:40px;
-}
-.home-2 .hero-bg .hero-text h2{
-    color: #fff;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 60px;
-}
-.home-2 .hero-bg .theme-cta,
-.home-2-about .theme-cta,
-.home-2-cta .theme-cta{
-    background: #FA4753;
-    display: inline-block;
-    padding: 17px 39px; 
-    color: #fff;
-}
-.home-2 .hero-bg .theme-cta:hover,
-.home-2-about .theme-cta:hover
-.home-2-cta .theme-cta:hover{
-    background: #0058bd;
-    cursor: pointer;
-    transition: .3s linear all;
-}
-.home-2 .no-padding{
-    padding: 0;
-}
-.hero-image img{
-    width: 100%;
-    height: 100%;
-}
-.hero-image{
-    position: relative;
-    height: 100%;
-}
-.home-2 .hero-image:before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #061028;
-    opacity: .6;
-    height: 100%;
-    width: 100%;
-}
-.home-2 .play-btn{
-    position: absolute;
-    top: 50%;
-    left: -5%;
-}
-.home-2 .play-btn .pulse{
-    margin-left: 0;
 }
 
+.home-2-hero::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #223645;
+    opacity: .2;
+}
+.hero-shape-upper{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.hero-shape-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.hero-2-cta{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 31%;
+    transform: rotate(-90deg);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    left: -4%;
+}
+.hero-2-cta span, p{
+    color: #fff;
+}
+
+.home-2-hero-content h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 129%;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.home-2-hero-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #FFFFFF;
+}
+.home-2-hero-content .link{
+    color: #fff;
+}
+
+/*-------------------------------------------------------------------------------------
+       Home 2 About
+---------------------------------------------------------------------------------------*/
+
+.home-2-about .section-title .home-2-info{
+    color: #647589;
+    margin-bottom: 26px;
+}
+.home-2-about .fld{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 0;
+}
+.abt-bg{
+    background: #222628;
+    padding: 138px 50px;
+}
+.home-2-about .abt-content-wrapper{
+    margin-left: 0;
+}
+.home-2-about .abt-content-wrapper .list-content{
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.home-2-about .abt-content-wrapper .list-content .icon iconify-icon{
+    color: #fff;
+}
+.home-2-about .abt-content-wrapper .list-content .inner-content h2{
+    color: #fff;
+}
 /*-------------------------------------------------------------------------------------
        Home 2 Counter
 ---------------------------------------------------------------------------------------*/
