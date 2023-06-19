@@ -215,8 +215,21 @@ p {
     color: #223645;
     margin-bottom: 17px;
 }
+.title-paragraph p{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #647589;
+}
 .mt-30{
     margin-top: 30px;
+}
+.mb-65{
+    margin-bottom: 65px;
+}
+.mb-30{
+    margin-bottom: 30px;
 }
 /*-------------------------------------------------------------------------------------
     back to top button
@@ -528,11 +541,13 @@ p {
 ---------------------------------------------------------------------------------------*/
     
 .hero-area {
-    padding: 130px 0;
+    padding: 130px 0 0;
     background: url('../images/hero-bg.png') no-repeat center center;
     background-size: cover;
 }
-
+.hero-area .center-align{
+    align-items: center;
+}
 .hero-text span {
     font-family: 'Poppins';
     font-weight: 600;
@@ -661,7 +676,7 @@ button.slick-arrow svg {
     about-area
 ---------------------------------------------------------------------------------------*/
 .about{
-    padding: 135px 68px;
+    padding: 135px 0;
 }
 .parent-image{
     position: relative;
@@ -934,6 +949,12 @@ button.slick-arrow svg {
     color: #223645;
     position: relative;
     transition: .3s linear all;
+    background: transparent;
+    border: none;
+    margin-right: 55px;
+}
+.tab-btn-wrapper button:last-child{
+    margin-right: 0;
 }
 .tab-btn-wrapper button.active-item::before{
     position: absolute;
@@ -1486,7 +1507,7 @@ ul.slick-dots li.slick-active > button{
     background: url('../images/inner-banner.png')top left;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 166px 0;
+    padding: 124px 0;
     position: relative;
     
 }
@@ -1498,15 +1519,22 @@ ul.slick-dots li.slick-active > button{
     height: 100%;
     top: 0;
     left: 0;
-    background: #031031;
-    opacity: .6;
+    background: #223645;
+    opacity: .7;
 }
-.inner-hero .hero-text {
-    text-align: center;
+
+.inner-hero .hero-text p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
 }
 .inner-hero .hero-text h2{
-    color: #fff;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    color: #FFFFFF;
 }
 .inner-hero .hero-text span {
     display: flex;
@@ -1516,6 +1544,10 @@ ul.slick-dots li.slick-active > button{
     color: #FA4753;
     font-weight: 500;
     margin-top: 8px;
+}
+.inner-hero .justify-end{
+    display: flex;
+    justify-content: end;
 }
 .inner-hero .hero-text a.home {
     display: flex;
@@ -1533,6 +1565,9 @@ ul.slick-dots li.slick-active > button{
     color: #FA4753;
     margin-left: 5px;
     font-weight: 600;
+}
+.inner-about .bottom-text{
+    margin-top: 40px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -2262,7 +2297,8 @@ ul.slick-dots li.slick-active > button{
     line-height: 20px;
     left: -4%;
 }
-.hero-2-cta span, p{
+.hero-2-cta span,
+.hero-2-cta p{
     color: #fff;
 }
 
@@ -2304,6 +2340,9 @@ ul.slick-dots li.slick-active > button{
 .home-2-about .abt-content-wrapper{
     margin-left: 0;
 }
+.home-2-about .abt-content-wrapper .list-content .inner-content p{
+    color: #fff;
+}
 .home-2-about .abt-content-wrapper .list-content{
     flex-direction: column;
     margin-bottom: 60px;
@@ -2316,10 +2355,10 @@ ul.slick-dots li.slick-active > button{
     color: #fff;
 }
 /*-------------------------------------------------------------------------------------
-       Home 2 Counter
+       Home 2 Offer
 ---------------------------------------------------------------------------------------*/
-.home-2-counter{
-    margin: 135px 0 67px;
+.home-2-offer .offer-wrapper{
+    padding: 40px 47px;
 }
 
 .home-2-counter .single-counter iconify-icon{
@@ -2345,87 +2384,27 @@ ul.slick-dots li.slick-active > button{
        Home 2 About
 ---------------------------------------------------------------------------------------*/
 .home-2-about{
-    padding: 67px 0;
-}
-.home-2-section-title .sub-heading p{
-    position: relative;
-    margin-left: 0;
-    padding-left: 55px;
-}
-.home-2-section-title .sub-heading p:before{
-    position: absolute;
-    left: 0;
-    bottom: 12px;
-    content: '';
-    background: #FA4753;
-    height: 2px;
-    width: 40px;
-}
-.home-2-abt-text{
-    margin-top: 10px;
-}
-.abt-highlight{
-    background: url('../images/abt-highlight-bg.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    padding: 23px 42px;
-    margin: 20px 0;
-}
-.single-highlight{
-    display: flex;
-    align-items: center;
-}
-.single-highlight:last-child{
-    margin-left: 72px;
-}
-.single-highlight span{
-    font-size: 35px;
-    font-weight: 700;
-    margin-right: 15px;
-    font-family: 'Poppins', sans-serif;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FA4753;
-}
-.single-highlight h5{
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
+    padding: 135px 0 67px;
 }
 
-.home-2-abt-img img{
-    width: 100%;
-}
-.home-2-abt-img{
-    position: relative;
-    height: 100%;
-}
-.home-2-abt-img:before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #061028;
-    opacity: .6;
-    height: 100%;
-    width: 100%;
-}
-.home-2-about .quote{
-    background: #061028;
-    left: 7%;
-    bottom: 4%;
-    top: inherit;
-}
 
 /*-------------------------------------------------------------------------------------
-       Home 2 Cta
+       Home 2 offer
 ---------------------------------------------------------------------------------------*/
-.home-2-cta{
-    background: url('../images/home-2-cta-bg.png') no-repeat center center;
-    background-size: cover;
-    padding: 76px 0;
-    margin: 67px 0;
+
+.home-2-offer .top-space{
+    margin-top: 65px;
+}
+
+.home-2-offer .column-1{
+    width: 100%;
+}
+.home-2-offer .column-2{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    margin-top: 8%;
+    margin-top: -65%;
 }
 
 .cta-text h2{
@@ -2444,6 +2423,46 @@ ul.slick-dots li.slick-active > button{
     display: flex;
     align-items: baseline;
     justify-content: center;
+}
+
+.offer-counter{
+    background: #222628;
+    position: absolute;
+    width: 100%;
+    padding: 162px 0;
+}
+.counter-up{
+    margin-bottom: 45px;
+}
+.counter-up,.counter-bottom{
+    display: flex;
+    align-items: center;
+}
+.counter-content{
+    margin-right: 82px;
+}
+.counter-content:last-child{
+    margin-right: 0;
+}
+.counter-wrapper .counter-content span,
+.counter-wrapper .counter-content h5{
+    color: #fff;
+}
+
+.counter-wrapper .counter-content span{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.counter-wrapper .counter-content h5{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -2790,301 +2809,3 @@ ul.slick-dots li.slick-active > button{
 }
 
 
-/*-------------------------------------------------------------------------------------
-       Home 3 Topbar
----------------------------------------------------------------------------------------*/
-.home-3-topbar{
-    padding: 32px 0;
-    border-bottom: 1px solid rgba(100, 117, 137, 0.2);
-}
-.home-3-phone{
-    display: flex;
-    align-items: center;
-    border-right: 1px solid rgba(100, 117, 137, 0.2);
-    padding-right: 30px;
-}
-.home-3-envelope{
-    border-right: 0;
-    margin-right: 0;
-}
-.home-3-topbar .justify-end,
-.home-3-header .justify-end{
-    display: flex;
-    justify-content: end;
-}
-.home-3-topbar .no-mr{
-    margin-right: 0;
-}
-.home-3-icons a{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    margin-right: 23px;
-}
-.home-3-icons a:last-child{
-    margin-right: 0;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 Header
----------------------------------------------------------------------------------------*/
-.home-3-header .main-menu ul li:first-child{
-    margin-left: 0;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 Hero
----------------------------------------------------------------------------------------*/
-.home-3-hero .hero-img img{ 
-    width: 100%;
-}
-.home-3-hero .hero-text span{
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
-    color: #FA4753;
-}
-.home-3-hero .hero-text h2{
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 140%;
-    color: #031031;
-    margin-top: 10px;
-}
-.call-to-action{
-    background: #FA4753;
-    display: inline-block;
-    padding: 17px 39px;
-    color: #fff;
-    transition: .3s linear all;
-    margin-top: 20px;
-}
-
-.call-to-action:hover{
-    background: #0058bd;
-}
-.dark-blue{
-    background: #031031;
-    position: relative;
-    padding: 17px 0;
-}
-.home-3-consultation .inner-text-1,
-.home-3-consultation .inner-text-2{
-    display: flex;
-    align-items: center;
-}
-
-.dark-blue::before{
-    background: #031031;
-    content: '';
-    left: -13%;
-    top: 0;
-    height: 100%;
-    width: 80px;
-    position: absolute;
-}
-.dark-blue h3{
-    font-size: 90px;
-    font-weight: 700;
-    color: #FA4753;
-    opacity: .2;
-}
-.dark-blue h6{
-    font-size: 32px;
-    font-weight: 600;
-    color: #fff;
-    margin-left: -48px;
-}
-.light-blue{
-    background: #FA4753;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-.light-blue::after{
-    background: #FA4753;
-    content: '';
-    right: -12%;
-    top: 0;
-    height: 100%;
-    width: 78px;
-    position: absolute;
-}
-
-.light-blue h3{
-    font-size: 90px;
-    font-weight: 700;
-    color: #FBFCFD;
-    opacity: .2;
-}
-.light-blue h6{
-    font-size: 32px;
-    font-weight: 600;
-    color: #fff;
-    margin-left: -48px;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 About
----------------------------------------------------------------------------------------*/
-.abt-lg-txt{
-    background: #FBFCFD;
-    border-left: 3px solid #FA4753;
-    padding: 27px 52px;
-    margin-top: 20px;
-}
-.abt-lg-txt h4{
-    color: #031031;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 37px;
-}
-.abt-lg-txt h4 span{
-    color: #FA4753;
-    font-weight: 700;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 Facility
----------------------------------------------------------------------------------------*/
-.facility-image{
-    margin-bottom: 45px;
-    margin-top: 67px;
-}
-.facility-image img{
-    width: 100%;
-}
-.h-3-facility-wrapper{
-    background: #FBFCFD;
-    padding: 208px 61px;
-}
-.h-3-mt{
-    margin-top: -34%;
-}
-.h-3-mt-65{
-    margin-top: -115px;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 Portfolio
----------------------------------------------------------------------------------------*/
-.home-3-portfolio .flex-items{
-    display: flex;
-    align-items: center;
-    margin-bottom: 65px;
-}
-.home-3-portfolio .home-3-mb-0{
-    margin-bottom: 0;
-}
-.single-btn{
-    font-size: 16px;
-    font-weight: 500;
-    color: #061028;
-    background: transparent;
-    border: none;
-    margin-right: 36px;
-}
-.single-btn:last-child{
-    margin-right: 0;
-}
-.tab-btn-wrapper .active-item{
-    color: #FA4753;
-}
-.home-3-portfolio .m-b-30,
-.home-3-who-we-grid .m-b-30{
-    margin-bottom: 30px;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 CTA
----------------------------------------------------------------------------------------*/
-.home-3-cta{
-    background: #FBFCFD;
-    margin-top: 38px;
-}
-.home-3-cta .cta-text h2,
-.home-3-cta .cta-text p{
-    color: #061028;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 Who we are
----------------------------------------------------------------------------------------*/
-.who-we-img{
-    padding: 67px 0;
-}
-.home-3-who-we{
-    padding: 105px 60px;
-}
-.home-3-who-we-grid .single-facility{
-    box-shadow: none;
-    padding: 0;
-    background: transparent;
-}
-.home-3-who-we-grid .single-facility h5{
-    font-size: 28px;
-    margin-bottom: 12px;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 team
----------------------------------------------------------------------------------------*/
-.home-3-team{
-    padding-top: 67px;
-}
-
-/*-------------------------------------------------------------------------------------
-       Home 3 testimonials
----------------------------------------------------------------------------------------*/
-.home-3-testi{
-    margin-top: 30px;
-}
-.home-3-testi .r-m-t-50{
-    margin-top: -45px;
- }
-.home-3-testi .slick-prev.pull-left.slick-arrow,
-.home-3-testi .slick-next.pull-right.slick-arrow{
-    opacity: 0;
-}
-.home-3-testi .home-2-testi-wrapper{
-    background: transparent;
-    box-shadow: none;
-}
-.home-3-testi .home-2-testi-wrapper p:first-child{
-   text-align: center;
-   padding: 0px 100px;
-}
-.home-3-testi .home-2-testi-wrapper .testi-meta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
- }
-
-.home-3-testi .home-2-testi-wrapper .testi-meta .meta-text p{
-    margin-bottom: 0;
- }
-
- /*-------------------------------------------------------------------------------------
-       Home 3 blog
----------------------------------------------------------------------------------------*/
-/* .home-3-blg{
-    margin-top: 30px;
-} */
-.home-3-blg .blog-wrapper .blog-img{
-    position: relative;
-}
-.home-3-blg .blog-wrapper .blg-meta{
-    background: #FA4753;
-    position: absolute;
-    right: 4%;
-    bottom: 45%;    
-    padding: 18px 25px;
-}
-.home-3-blg .blog-wrapper .blg-meta p{
-    font-size: 14px;
-    color: #fff;
-    font-weight: 500;
-}
