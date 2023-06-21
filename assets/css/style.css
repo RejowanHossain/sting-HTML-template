@@ -779,7 +779,7 @@ button.slick-arrow svg {
     font-size: 45px;
 }
 .offer-wrapper h5{
-    color: #031031;
+    color: #223645;
     margin-bottom: 12px;
 }
 .offer-wrapper iconify-icon.arrow-icon {
@@ -1043,7 +1043,7 @@ button.slick-arrow svg {
     content: '';
     height: 100%;
     width: 100%;
-    background: #031031;
+    background: #223645;
     opacity: .6;
     top: 0;
     left: 0;
@@ -1433,7 +1433,7 @@ ul.slick-dots li.slick-active > button{
 }
 .footer .newsletter h5{
     font-size: 30px;
-    color: #031031;
+    color: #223645;
     font-weight: 600;
 }
 .footer .newsletter input{
@@ -1671,7 +1671,7 @@ ul.slick-dots li.slick-active > button{
 .service-list-wrapper .list p{
     font-size: 15px;
     margin-left: 14px;
-    color: #031031;
+    color: #223645;
 }
 .case-img img{
     width: 100%;
@@ -1849,13 +1849,16 @@ ul.slick-dots li.slick-active > button{
 .categories,
 .recent-posts, 
 .tags{
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 .search input{
     width: 100%;
     padding: 18px 28px;
     border: none;
     background:rgba(100, 117, 137, 0.1);
+    position: relative;
+}
+.newsletter-blog{
     position: relative;
 }
 .search svg{
@@ -1871,11 +1874,12 @@ ul.slick-dots li.slick-active > button{
 
 .categories h5, 
 .recent-posts h5,
-.tags h5{
+.tags h5,
+.newsletter-blog h5{
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 17px;
-    color: #031031;
+    color: #223645;
 }
 .categories ul li{
     display: flex;
@@ -1893,7 +1897,7 @@ ul.slick-dots li.slick-active > button{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
-    color: #031031;
+    color: #223645;
 }
 .single-recent-wrapper{
     display: flex;
@@ -1913,7 +1917,7 @@ ul.slick-dots li.slick-active > button{
 .recent-meta a{
     font-size: 14px;
     font-weight: 500;
-    color: #031031;
+    color: #223645;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
 }
@@ -1928,18 +1932,55 @@ ul.slick-dots li.slick-active > button{
 }
 
 .tag{
-    border: 1px solid #031031;
+    background: #EAEAEA;
     display: inline-block;
     padding: 5px 26px;
     margin: 3px 3px 3px 0;
 }
 .tag a{
-    color: #031031;
+    color: #223645;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 12px;
 }
-
+.newsletter-blog .theme-btn{
+    border: 0;
+    position: absolute;
+    right: 0;
+    bottom: 4%;
+    font-weight: 500;
+    padding: 14px;
+}
+.newsletter-blog .theme-btn:hover{
+    box-shadow: 0px 0px 0 #fff;
+}
+.blog-wrapper .blog-inner h5{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #223645;
+    margin: 23px 0 12px;;
+}
+.blog-wrapper .blog-inner span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FA4753;
+    margin-bottom: 13px;
+}
+.blog-wrapper .blog-inner p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #647589;
+    margin-bottom: 18px;
+}
+.blog-wrapper .blog-inner a{
+    padding: 11px 16px;
+    background: #FA4753;
+    color: #fff;
+    display: inline-block;
+}
 /*-------------------------------------------------------------------------------------
         blog-details page
 ---------------------------------------------------------------------------------------*/
@@ -1968,7 +2009,7 @@ ul.slick-dots li.slick-active > button{
     display: flex;
 }
 .top-meta .social p{
-    color: #031031;
+    color: #223645;
     font-size: 14px;
 }
 .top-meta .social ul li{
@@ -1985,7 +2026,7 @@ ul.slick-dots li.slick-active > button{
     font-size: 12px;
 }
 .blog-content-wrapper h2{
-    color: #031031;
+    color: #223645;
     font-size: 28px;
     font-weight: 600;
     margin-top: 11px;
@@ -1998,7 +2039,7 @@ ul.slick-dots li.slick-active > button{
     justify-content: space-between;
     margin-top: 15px;
     font-size: 14px;
-    color: #031031;
+    color: #223645;
     margin-bottom: 17px;
 }
 .bottom-meta .date, .author, .comments{
@@ -2012,7 +2053,7 @@ ul.slick-dots li.slick-active > button{
     font-weight: 500;
 }
 .bottom-meta .comments p{
-    color: #031031;
+    color: #223645;
     font-weight: 500;
     font-size: 14px;
 }
@@ -2020,8 +2061,8 @@ ul.slick-dots li.slick-active > button{
     margin: 24px 0;
 }
 .blog-details-quote p{
-    font-size: 24px;
-    color: #031031;
+    font-size: 28px;
+    color: #223645;
     font-weight: 500;
     line-height: 35px;
     padding: 0 73px;
@@ -2035,7 +2076,7 @@ ul.slick-dots li.slick-active > button{
     padding-bottom: 11px;
 }
 .paginate-link a{
-    color: #031031;
+    color: #223645;
     font-size: 14px;
 }
 .blog-comments{
@@ -2043,7 +2084,7 @@ ul.slick-dots li.slick-active > button{
 }
 .blog-comments h4{
     font-size: 22px;
-    color: #031031;
+    color: #223645;
     font-weight: 500;
     margin-bottom: 28px;
 }
@@ -2070,7 +2111,7 @@ ul.slick-dots li.slick-active > button{
 }
 .name-meta-info .name h5{
     font-size: 18px;
-    color: #031031;
+    color: #223645;
     font-weight: 600;
 }
 .name-meta-info .date{
@@ -2100,18 +2141,23 @@ ul.slick-dots li.slick-active > button{
     padding: 25px 30px;
     width: 100%;
     border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #223645;
 }
 .comment-form input.sm{
     width: 96%;
 }
 .comment-form textarea{
     border-radius: 0;
-    background-color: rgba(100, 117, 137, 0.1);
-    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #223645;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 .form-control:focus {
     color: #647589;
-    background-color: rgba(100, 117, 137, 0.1);
+    background-color: transparent;
     outline: 0;
 }
 .form-group p{
@@ -2123,7 +2169,7 @@ ul.slick-dots li.slick-active > button{
 .comment-form .theme-btn{
     color: #fff;
     padding: 15px 33px;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -2133,6 +2179,21 @@ ul.slick-dots li.slick-active > button{
 .contact-page{
     padding: 83px 67px;
 }
+.contact-page .fld{
+    align-items: center;
+}
+.contact-page .comment-form h4{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #223645;
+}
+.contact-us{
+    background: url('../images/contact-image.png') no-repeat center center;
+    background-size: auto;
+}
+
 
 /*-------------------------------------------------------------------------------------
        team page
@@ -2233,12 +2294,12 @@ ul.slick-dots li.slick-active > button{
 .error-content h2{
     font-size: 180px;
     font-weight: 600;
-    color: #031031;
+    color: #223645;
 }
 .error-content h4{
     font-size: 30px;
     font-weight: 600;
-    color: #031031;
+    color: #223645;
 }
 .error-btn{
     padding: 14px 45px;
@@ -2252,8 +2313,39 @@ ul.slick-dots li.slick-active > button{
 .faq-page{
     padding: 135px 0 67px;
 }
+.accordion .card{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
 .accordion .card .card-header{
-    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+.accordion .card .card-header h2 button.collapsed{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #223645;
+    text-decoration: none;
+}
+
+.accordion .card .card-header h2 button{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FA4753;
+    text-decoration: none;
+}
+
+.accordion .card .card-body{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #647589;
+    padding: 29px 58px;
 }
 
 
@@ -2269,7 +2361,7 @@ ul.slick-dots li.slick-active > button{
     font-weight: 700;
     line-height: 62px;
     text-transform: capitalize;
-    color: #031031;
+    color: #223645;
 }
 .p-l-r{
     margin-bottom: 65px;
@@ -2281,7 +2373,7 @@ ul.slick-dots li.slick-active > button{
 .policy-single h4{
     font-size: 25px;
     font-weight: 600;
-    color: #031031;
+    color: #223645;
     margin-bottom: 10px;
 }
 .policy-single p{
@@ -2666,7 +2758,7 @@ ul.slick-dots li.slick-active > button{
 .single-facility h5{
     font-weight: 600;
     font-size: 18px;
-    color: #031031;
+    color: #223645;
 }
 .single-facility p{
     font-size: 15px;
@@ -2676,7 +2768,7 @@ ul.slick-dots li.slick-active > button{
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     letter-spacing: 0.115em;
-    color: #031031;
+    color: #223645;
     margin-top: 12px;
 }
 
@@ -2920,7 +3012,7 @@ ul.slick-dots li.slick-active > button{
 .home-2-testi-wrapper p{
     font-weight: 400;
     font-size: 16px;
-    color: #031031;
+    color: #223645;
     margin-bottom: 22px;
 }
 .home-2-testi-wrapper .testi-meta{
@@ -2933,12 +3025,12 @@ ul.slick-dots li.slick-active > button{
 .home-2-testi-wrapper .testi-meta .meta-text h4{
     font-size: 18px;
     font-weight: 600;
-    color: #031031;
+    color: #223645;
 }
 
 .home-2-testi-wrapper .testi-meta .meta-text p{
     font-size: 14px;
-    color: #031031;
+    color: #223645;
 }
 
 /*-------------------------------------------------------------------------------------
