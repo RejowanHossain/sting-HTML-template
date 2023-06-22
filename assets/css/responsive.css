@@ -15,6 +15,9 @@
 /* normal desktop */
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    .section-title h2 {
+        font-size: 34px;
+    }
     .site-logo{
         margin-top: 35px;
     }
@@ -28,24 +31,41 @@
         top: 15px;
     }
     .hero-text h1{
-        font-size: 44px;
-        line-height: 58px;
+        font-size: 37px;
+        line-height: 52px;
     }
-    .hero-text p::before {
-        width: 76%;
+    .hero-social-links,
+    .hero-appointment{
+        display: none;
     }
     .hero-area button.slick-arrow{
         visibility: hidden;
     }
     .about{
-        padding: 135px 0 135px;
+        padding: 135px 0 65px;
     }
-    .progress-wrapper{
-        flex-direction: column;
-      align-items: baseline;
+    .child-image {
+        left: -2%;
+        bottom: 27%;
+      }
+    .progress_bar{
+        display: none;
     }
-    .progress-two{
-        margin-top: 20px;
+
+    .offer-wrapper {
+        padding: 40px 25px;
+    }
+
+    .offer-wrapper h5 {
+        font-size: 17px;
+    }
+
+    .showcase-content h3 {
+        font-size: 20px;;
+    }
+    .heading-tabs li button {
+        padding: 20px 40px;
+        font-size: 25px;
     }
     .quote{
         right: 0;
@@ -61,9 +81,7 @@
     .team-images .overlay{
         width: 90%;
     }
-    .video{
-        margin-top: -32%;
-    }
+
     .blog-img img{
         width: 100%;
     }
@@ -205,6 +223,9 @@
 /* tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .section-title h2 {
+        font-size: 34px;
+    }
     .site-logo{
         margin-top: 35px;
     }
@@ -221,14 +242,52 @@
         font-size: 44px;
         line-height: 58px;
     }
-    .hero-text p::before {
-        width: 76%;
+    .hero-social-links,
+    .hero-appointment{
+        display: none;
+    }
+    .hero-image{
+        display: none;
+    }
+    .parent-image{
+        margin-bottom: 30px;
+    }
+    .child-image{
+        display: none;
+    }
+    .progress_bar{
+        display: none;
+    }
+    .responsive-mb-30{
+        margin-bottom: 30px;
+    }
+    .showcase{
+        display: none;
+    }
+    .heading-tabs li button {
+        padding: 20px 29px;
+        font-size: 18px
+    }
+    .counter{
+        margin-bottom: 30px;
+    }
+    .portfolio{
+        display: none;
+    }
+    .portfolio-hovered{
+        bottom: 0;
+    }
+    .last-elem{
+        margin-top: 40%;
+    }
+    .footer .newsletter .newsletter-btn {
+        right: 22%;
     }
     .hero-area button.slick-arrow{
         visibility: hidden;
     }
     .about{
-        padding: 135px 0 135px;
+        padding: 135px 0 67px;
     }
     .r-margin-top{
         margin-top: 60px;
@@ -271,12 +330,6 @@
     .testimonials .section-title{
         display: none;
     }
-    .video{
-        margin-top: -32%;
-    }
-    .video .pulse{
-        display: none;
-    }
     .blog-img img{
         width: 100%;
     }
@@ -295,7 +348,7 @@
         justify-content: start;
     }
     .footer .d-end{
-        justify-content: center;
+        justify-content: start;
     }
     .footer-copyright{
         padding-bottom: 18px;
@@ -520,6 +573,9 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
     .site-logo{
         margin-top: 35px;
     }
@@ -550,8 +606,47 @@
         font-size: 35px;
         line-height: 52px;
     }
-    .hero-text p {
+
+    .hero-social-links,
+    .hero-appointment{
         display: none;
+    }
+    .hero-image{
+        display: none;
+    }
+    .parent-image{
+        margin-bottom: 30px;
+    }
+    .child-image{
+        display: none;
+    }
+    .progress_bar{
+        display: none;
+    }
+    .responsive-mb-30{
+        margin-bottom: 30px;
+    }
+    .showcase{
+        display: none;
+    }
+    .heading-tabs li button {
+        padding: 20px 29px;
+        font-size: 18px
+    }
+    .counter{
+        margin-bottom: 30px;
+    }
+    .portfolio{
+        display: none;
+    }
+    .portfolio-hovered{
+        bottom: 0;
+    }
+    .last-elem{
+        margin-top: 40%;
+    }
+    .footer .newsletter .newsletter-btn {
+        right: 3%;
     }
     .hero-text p::before {
         width: 100%;
@@ -561,6 +656,15 @@
     }
     .hero-cta .pulse,
     .hero-cta .link{
+        display: none;
+    }
+    .form-touch{
+        margin-top: 30px;
+    }
+    .form-touch form{
+        padding: 80px 36px;
+    }
+    .blog{
         display: none;
     }
     .about{
@@ -638,9 +742,6 @@
     }
     .testimonials .section-title{
         display: none;
-    }
-    .video{
-        margin-top: -32%;
     }
     .video .pulse{
         display: none;
@@ -938,6 +1039,9 @@
 /* large mobile */
 
 @media only screen and (min-width: 520px) and (max-width: 767px) {
+    .section-title h2 {
+        font-size: 34px;
+    }
     .site-logo{
         margin-top: 35px;
     }
@@ -958,8 +1062,47 @@
         font-size: 35px;
         line-height: 52px;
     }
-    .hero-text p {
-        font-size: 13px;
+
+    .hero-social-links,
+    .hero-appointment{
+        display: none;
+    }
+    .hero-image{
+        display: none;
+    }
+    .parent-image{
+        margin-bottom: 30px;
+    }
+    .child-image{
+        display: none;
+    }
+    .progress_bar{
+        display: none;
+    }
+    .responsive-mb-30{
+        margin-bottom: 30px;
+    }
+    .showcase{
+        display: none;
+    }
+    .heading-tabs li button {
+        padding: 20px 29px;
+        font-size: 18px
+    }
+    .counter{
+        margin-bottom: 30px;
+    }
+    .portfolio{
+        display: none;
+    }
+    .portfolio-hovered{
+        bottom: 0;
+    }
+    .last-elem{
+        margin-top: 40%;
+    }
+    .footer .newsletter .newsletter-btn {
+        right: 3%;
     }
     .hero-text p::before {
         width: 65%;
@@ -1016,14 +1159,14 @@
     .testimonials .section-title{
         display: none;
     }
-    .video{
-        margin-top: -32%;
+    .form-touch{
+        margin-top: 30px;
     }
     .video .pulse{
         display: none;
     }
-    .blog-img img{
-        width: 100%;
+    .blog{
+        display: none;
     }
     .blog-content h5{
         font-size: 24px;

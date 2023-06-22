@@ -357,7 +357,7 @@ p {
     header area
 ---------------------------------------------------------------------------------------*/
 .container-big{
-    max-width: 1308px;
+    width: 1308px;
 }
 .main-menu ul {
     display: flex;
@@ -565,6 +565,10 @@ p {
 }
 .hero-text p{
     margin-top: 19px;
+}
+
+.hero-image img{
+    width: 100%;
 }
 
 .theme-cta {
@@ -1035,7 +1039,7 @@ button.slick-arrow svg {
     background-size: cover;
     padding: 174px 0;
     position: relative;
-    margin: 68px 0;
+    margin: 68px 0 0;
 
 }
 .video::before{
