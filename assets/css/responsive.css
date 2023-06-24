@@ -44,6 +44,7 @@
     .about{
         padding: 135px 0 65px;
     }
+   
     .child-image {
         left: -2%;
         bottom: 27%;
@@ -100,6 +101,9 @@
     .service-details{
         padding: 80px 0 40px 0;
     }
+    .services-card{
+        display: none;
+    }
     .more-para{
         margin: 15px 0 25px;
     }
@@ -125,6 +129,12 @@
     /* portfolio-details */
     .portfolio-details{
         padding: 80px 0 40px 0;
+    }
+    .details-wrapper-left img{
+        width: 100%;
+    }
+    .detail-img img{
+        width: 100%;
     }
     .p-details-img img{
         width: 100%;
@@ -280,6 +290,9 @@
     .last-elem{
         margin-top: 40%;
     }
+    .blog{
+        display: none;
+    }
     .footer .newsletter .newsletter-btn {
         right: 22%;
     }
@@ -358,6 +371,16 @@
     .service-details{
         padding: 80px 0 67px 0;
     }
+    .details-wrapper-left img{
+        width: 100%;
+    }
+
+    .services-card{
+        display: none;
+    }
+    .case-img{
+        margin-bottom: 30px;
+    }
     .more-para{
         margin: 15px 0 25px;
     }
@@ -395,6 +418,12 @@
         margin-bottom: 25px;
     }
     .p-detail-img-grid img{
+        width: 100%;
+    }
+    .details-wrapper-left img{
+        width: 100%;
+    }
+    .detail-img img{
         width: 100%;
     }
 
@@ -573,6 +602,9 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
+    .container-big {
+        width: 100%;
+    }
     .section-title h2 {
         font-size: 30px;
     }
@@ -625,6 +657,10 @@
     }
     .responsive-mb-30{
         margin-bottom: 30px;
+    }
+    .inner-hero .justify-end {
+        display: flex;
+        justify-content: start;
     }
     .showcase{
         display: none;
@@ -797,6 +833,20 @@
         bottom: 46%;
     }
     /* service details page */
+    .inner-hero .hero-text-inner h2{
+        font-size: 32px;
+    }
+    .details-wrapper-left img{
+        width: 100%;
+    }
+
+    .services-card{
+        display: none;
+    }
+    .case-img{
+        margin-bottom: 30px;
+    }
+
     .blog-details-quote p {
         padding: 0 10px;
     }
@@ -1042,6 +1092,9 @@
     .section-title h2 {
         font-size: 34px;
     }
+    .inner-hero .hero-text-inner h2{
+        font-size: 32px;
+    }
     .site-logo{
         margin-top: 35px;
     }
@@ -1179,6 +1232,7 @@
     .blog-content a{
         font-size: 14px;
     }
+    
     .d-center {
         justify-content: start;
     }
@@ -1211,10 +1265,23 @@
     .search svg{
         right: 4%;
     }
+    .blog-img img{
+        width: 100%;
+    }
 
     /* service details page */
     .blog-details-quote p {
         padding: 0 10px;
+    }
+    .details-wrapper-left img{
+        width: 100%;
+    }
+
+    .services-card{
+        display: none;
+    }
+    .case-img{
+        margin-bottom: 30px;
     }
 
     .comment-form input.sm{
