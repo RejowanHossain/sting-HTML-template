@@ -2666,7 +2666,11 @@ ul.slick-dots li.slick-active > button{
 /*-------------------------------------------------------------------------------------
        Home 2 offer
 ---------------------------------------------------------------------------------------*/
-
+.home-2-offer{
+    position: relative;
+    background: url('../images/counter-bg.png') no-repeat center center;
+    background-size: cover;
+}
 .home-2-offer .top-space{
     margin-top: 65px;
 }
@@ -2705,6 +2709,7 @@ ul.slick-dots li.slick-active > button{
     position: absolute;
     width: 100%;
     padding: 162px 0;
+    top: 605%;
 }
 .counter-up{
     margin-bottom: 45px;

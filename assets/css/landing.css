@@ -19,8 +19,8 @@ font-family: 'Rajdhani', sans-serif;
 ---------------------------------------------------- */
 :root {
     --ltn__primary-color: #071c1f;
-    --ltn__secondary-color: #0D7DFC;
-    --ltn__heading-color: #031031;
+    --ltn__secondary-color: #FA4753;
+    --ltn__heading-color: #061028;
     --ltn__paragraph-color: #071c1f;
 
     --ltn__heading-font: 'Rajdhani', sans-serif;
@@ -29,7 +29,7 @@ font-family: 'Rajdhani', sans-serif;
     /* Background Colors */
     --section-bg-1: #F2F6F7;
     /* White */
-    --section-bg-2: #031031;
+    --section-bg-2: #061028;
     /* Black */
 
     /* Border Colors */
@@ -375,9 +375,12 @@ ol li:before {
 }
 
 .theme-btn-1 {
-    background-color: #0D7DFC;
+    background-color: #FA4753;
     border: 0;
     color: #fff
+}
+.theme-btn-1:hover{
+    color:#fff
 }
 
 
@@ -1336,7 +1339,7 @@ ol li:before {
     Header Area
 ---------------------------------------------------- */
 .ltn__primary-bg {
-    background-color: #031031
+    background-color: #061028
 }
 
 .ltn__secondary-color {
@@ -1490,7 +1493,7 @@ ol li:before {
 
 .ltn__prev-hero-area h1 {
     font-size: 50px;
-    color: #031031;
+    color: #061028;
 }
 
 
