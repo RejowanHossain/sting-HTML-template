@@ -2103,6 +2103,8 @@ ul.slick-dots li.slick-active > button{
 .single-comment img{
     margin-bottom: 0;
     width: 100px;
+    border-radius: 50%;
+
 }
 .name-meta-info {
     margin-left: 18px;
